@@ -1,0 +1,19 @@
+{
+  "title": "Iframe Compatibility Processor Input",
+  "description": "Input schema for the iframe compatibility processor Actor",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "url": {
+      "title": "URL to Process",
+      "description": "The URL of the webpage to process for iframe compatibility",
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://.*",
+      "editor": "textfield",
+      "example": "https://example.com"
+    }
+  },
+  "required": ["url"],
+  "additionalProperties": false
+}
